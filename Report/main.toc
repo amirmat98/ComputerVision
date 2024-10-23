@@ -1,3 +1,5 @@
 \contentsline {section}{\numberline {1}Adding Noise}{3}{}%
 \contentsline {section}{\numberline {2}Applying different filters to the image}{4}{}%
 \contentsline {section}{\numberline {3}Practice with linear filters }{8}{}%
+\contentsline {section}{\numberline {4}Applying the Fourier transform on the image}{10}{}%
+\contentsline {section}{\numberline {5}Conclusion }{11}{}%
