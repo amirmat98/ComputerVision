@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1729712228 "main.bcf" "main.bbl" "main" 1729712338
-  "main.bcf" 1729712338 107031 6695bbd75f55f548c278e93de33d5ffe "pdflatex"
+["biber main"] 1729712228 "main.bcf" "main.bbl" "main" 1729712755
+  "main.bcf" 1729712755 107031 6695bbd75f55f548c278e93de33d5ffe "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1729712334 "c:/Amir/Uni/Course/Master/Computer Vision/Labs/Lab2/Report/main.tex" "main.pdf" "main" 1729712338
-  "Abstract.aux" 1729712337 4121 8ccf0ac7ff58aa776000c8d41631380c "pdflatex"
+["pdflatex"] 1729712751 "c:/Amir/Uni/Course/Master/Computer Vision/Labs/Lab2/Report/main.tex" "main.pdf" "main" 1729712755
+  "Abstract.aux" 1729712754 4121 8ccf0ac7ff58aa776000c8d41631380c "pdflatex"
   "Abstract.tex" 1729708903 875 4cea58661df12ec0ed0569a344ccc4af ""
   "C:/Users/Amir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1729711474 595817 c358e6d7af8694093a75783279e8299c ""
   "C:/Users/Amir/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1666449377 10787539 4d50bb28529dfffd94c42303b735c140 ""
@@ -115,10 +115,12 @@
   "C:/Users/Amir/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/Amir/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/Amir/AppData/Local/Programs/MiKTeX/tex/xelatex/xetexconfig/crop.cfg" 1169250894 305 57c5d049d73b46b49f97b41eaa29558b ""
-  "Main/adding_noise.aux" 1729712337 4553 4b7282f3e60845ddcb882e343e65fb5b "pdflatex"
+  "Main/adding_noise.aux" 1729712754 4553 4b7282f3e60845ddcb882e343e65fb5b "pdflatex"
   "Main/adding_noise.tex" 1729709712 1548 fd36072626f6bf4be961581afb2e5857 ""
-  "Main/applying_filters.aux" 1729712338 6391 ada70d6533fcdb833bcaf6ead87f7466 "pdflatex"
+  "Main/applying_filters.aux" 1729712755 6391 ada70d6533fcdb833bcaf6ead87f7466 "pdflatex"
   "Main/applying_filters.tex" 1729712332 8229 0e731bdc9db20860119a4bcdaf6e1ec5 ""
+  "Main/linear_filters.aux" 1729712755 4768 947621e0bf7aff40dbe40ce623932de2 "pdflatex"
+  "Main/linear_filters.tex" 1729712746 2496 9c1418eebccc5cd646d1c5090eddc05c ""
   "Resources/Avg_filter.png" 1729709793 11627 288f8fb7595b6d5f95b6a7ccab7d14cb ""
   "Resources/F7-a.png" 1729711799 37433 9c84db21d67a20561085a9b7730bd8a9 ""
   "Resources/F7-b.png" 1729711818 36762 b53ecd0c26e0f9863c0b9eef55a3acc7 ""
@@ -133,15 +135,16 @@
   "Resources/Low pass Gaussian filter.png" 1729710512 16001 526d1d1285bfd274938521fb444cb18c ""
   "Title/Unige-logo.jpeg" 1702635588 14734 f31c2123cf203ed687b8d2500f6a705f ""
   "Title/title.tex" 1729700877 2625 ccb1d81ac30467778c6ac8776ffb0a40 ""
-  "c:/Amir/Uni/Course/Master/Computer Vision/Labs/Lab2/Report/main.tex" 1729711358 1156 27e8aba790b997335e4e7b12be188dac ""
-  "main.aux" 1729712338 311 940826f77defe824320db4bb8a6d26b5 "pdflatex"
+  "c:/Amir/Uni/Course/Master/Computer Vision/Labs/Lab2/Report/main.tex" 1729712715 1190 8393f3ca9a545f2cc33694d8c6264b13 ""
+  "main.aux" 1729712755 345 75b72ff62e51e0bfdc0ec5f3dd2f3b44 "pdflatex"
   "main.bbl" 1729712232 486 5d0d039bf84e4f45a7144d280f172f5d "biber main"
-  "main.run.xml" 1729712338 2340 41ed025e32a824b998d2fcbe80d09338 "pdflatex"
-  "main.toc" 1729712338 145 885c47de5c1081afa21064d33775ce14 "pdflatex"
+  "main.run.xml" 1729712755 2340 41ed025e32a824b998d2fcbe80d09338 "pdflatex"
+  "main.toc" 1729712755 221 934b1b2e8839ddae2e5c18cca6a3c409 "pdflatex"
   (generated)
   "Abstract.aux"
   "Main/adding_noise.aux"
   "Main/applying_filters.aux"
+  "Main/linear_filters.aux"
   "main.aux"
   "main.bcf"
   "main.log"
