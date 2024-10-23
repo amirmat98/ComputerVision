@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.22)  23 OCT 2024 18:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.22)  23 OCT 2024 21:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -575,7 +575,36 @@ Package biblatex Info: ... and expl3
 Package: xparse 2022-06-22 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
-)) (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/matlab-prettifier\matlab-prettifier.sty
+)) (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+ (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen187
+\captionmargin=\dimen188
+\caption@leftmargin=\dimen189
+\caption@rightmargin=\dimen190
+\caption@width=\dimen191
+\caption@indent=\dimen192
+\caption@parindent=\dimen193
+\caption@hangindent=\dimen194
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count445
+\c@continuedfloat=\count446
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+ (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: wrapfig package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count447
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count448
+) (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/matlab-prettifier\matlab-prettifier.sty
 Package: matlab-prettifier 2014/06/19 v0.3 A package for prettyprinting Matlab source code
  (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
@@ -597,9 +626,9 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
-\netBracketCount@mlpr=\count445
-\blkLvl@mlpr=\count446
-\blkLvlAtClassdef@mlpr=\count447
+\netBracketCount@mlpr=\count449
+\blkLvl@mlpr=\count450
+\blkLvlAtClassdef@mlpr=\count451
 \emHeight@mlpr=\skip98
 \jayDepth@mlpr=\skip99
 \sectionRuleOffset@mlpr=\skip100
@@ -608,30 +637,76 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 \everycr=\toks41
 \minrowclearance=\skip101
-\rownum=\count448
+\rownum=\count452
 )
-\@quotelevel=\count449
-\@quotereset=\count450
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 27.
+\@quotelevel=\count453
+\@quotereset=\count454
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 28.
  (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) (main.aux)
+) (main.aux (Abstract.aux) (Main/adding_noise.aux) (Main/applying_filters.aux
+
+LaTeX Warning: Label `fig:ApplyingFilters' multiply defined.
+
+
+LaTeX Warning: Label `fig:ApplyingFilters' multiply defined.
+
+
+LaTeX Warning: Label `fig:ApplyingFilters' multiply defined.
+
+
+LaTeX Warning: Label `fig:ApplyingFilters' multiply defined.
+
+
+LaTeX Warning: Label `fig:ApplyingFilters' multiply defined.
+
+
+LaTeX Warning: Label `fig:first' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:first' multiply defined.
+
+
+LaTeX Warning: Label `fig:Second' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:Second' multiply defined.
+
+
+LaTeX Warning: Label `fig:ApplyingFilters' multiply defined.
+
+
+LaTeX Warning: Label `fig:first' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:first' multiply defined.
+
+
+LaTeX Warning: Label `fig:Second' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:Second' multiply defined.
+
+
+LaTeX Warning: Label `fig:ApplyingFilters' multiply defined.
+
+))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -669,16 +744,16 @@ LaTeX Font Info:    ... okay on input line 27.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count451
-\scratchdimen=\dimen187
+\scratchcounter=\count455
+\scratchdimen=\dimen195
 \scratchbox=\box74
-\nofMPsegments=\count452
-\nofMParguments=\count453
+\nofMPsegments=\count456
+\nofMParguments=\count457
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count454
-\MPscratchDim=\dimen188
-\MPnumerator=\count455
-\makeMPintoPDFobject=\count456
+\MPscratchCnt=\count458
+\MPscratchDim=\dimen196
+\MPnumerator=\count459
+\makeMPintoPDFobject=\count460
 \everyMPtoPDFconversion=\toks43
 ) (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -686,13 +761,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package crop Info: requested driver: `' on input line 27.
-Package crop Info: detected driver: `pdftex' on input line 27.
-Package crop Info: using `pdftex' graphics driver on input line 27.
+Package crop Info: requested driver: `' on input line 28.
+Package crop Info: detected driver: `pdftex' on input line 28.
+Package crop Info: using `pdftex' graphics driver on input line 28.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 27.
-\c@lstlisting=\count457
+(lastpage)             ! on input line 28.
+\c@lstlisting=\count461
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
@@ -706,8 +781,10 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 27.
-Package biblatex Info: Reference segment=0 on input line 27.
+Package biblatex Info: Reference section=0 on input line 28.
+Package biblatex Info: Reference segment=0 on input line 28.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
  (Title/title.tex
 <Title/Unige-logo.jpeg, id=1, 227.85126pt x 227.85126pt>
 File: Title/Unige-logo.jpeg Graphic file (type jpg)
@@ -717,32 +794,118 @@ Package pdftex.def Info: Title/Unige-logo.jpeg  used on input line 9.
  [1
 
 {C:/Users/Amir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Title/Unige-logo.jpeg>])
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 30.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 31.
  (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 ) (main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [1] (Main/Exercise1.tex) 
+ [1]
+\openout2 = `Abstract.aux'.
+
+ (Abstract.tex) [2
+
+]
+\openout2 = `Main/adding_noise.aux'.
+
+ (Main/adding_noise.tex
+<Resources/Images_Org_Nosied.png, id=17, 257.46187pt x 325.215pt>
+File: Resources/Images_Org_Nosied.png Graphic file (type png)
+<use Resources/Images_Org_Nosied.png>
+Package pdftex.def Info: Resources/Images_Org_Nosied.png  used on input line 22.
+(pdftex.def)             Requested size: 386.19183pt x 487.8213pt.
+) [3
+
+
+
+ <./Resources/Images_Org_Nosied.png>]
+\openout2 = `Main/applying_filters.aux'.
+
+ (Main/applying_filters.tex
+<Resources/Avg_filter.png, id=21, 283.81032pt x 122.70844pt>
+File: Resources/Avg_filter.png Graphic file (type png)
+<use Resources/Avg_filter.png>
+Package pdftex.def Info: Resources/Avg_filter.png  used on input line 8.
+(pdftex.def)             Requested size: 425.71442pt x 184.0622pt.
+<Resources/Image with Gaussian noise filter by a moving average filter.png, id=22, 319.1925pt x 143.78719pt>
+File: Resources/Image with Gaussian noise filter by a moving average filter.png Graphic file (type png)
+<use Resources/Image with Gaussian noise filter by a moving average filter.png>
+Package pdftex.def Info: Resources/Image with Gaussian noise filter by a moving average filter.png  used on input line 18.
+(pdftex.def)             Requested size: 319.19171pt x 143.78683pt.
+ [4
+
+
+
+ <./Resources/Avg_filter.png> <./Resources/Image with Gaussian noise filter by a moving average filter.png>]
+<Resources/Image with Salt & Pepper noise filter by moving average filter.png, id=26, 311.66437pt x 129.48375pt>
+File: Resources/Image with Salt & Pepper noise filter by moving average filter.png Graphic file (type png)
+<use Resources/Image with Salt & Pepper noise filter by moving average filter.png>
+Package pdftex.def Info: Resources/Image with Salt & Pepper noise filter by moving average filter.png  used on input line 27.
+(pdftex.def)             Requested size: 311.6636pt x 129.48341pt.
+<Resources/Low pass Gaussian filter.png, id=27, 341.02406pt x 143.03438pt>
+File: Resources/Low pass Gaussian filter.png Graphic file (type png)
+<use Resources/Low pass Gaussian filter.png>
+Package pdftex.def Info: Resources/Low pass Gaussian filter.png  used on input line 36.
+(pdftex.def)             Requested size: 341.02322pt x 143.03401pt.
+ [5 <./Resources/Image with Salt & Pepper noise filter by moving average filter.png> <./Resources/Low pass Gaussian filter.png>]
+<Resources/Image with Gaussian noise filtered by low-pass Gaussian filter.png, id=31, 308.65312pt x 144.54pt>
+File: Resources/Image with Gaussian noise filtered by low-pass Gaussian filter.png Graphic file (type png)
+<use Resources/Image with Gaussian noise filtered by low-pass Gaussian filter.png>
+Package pdftex.def Info: Resources/Image with Gaussian noise filtered by low-pass Gaussian filter.png  used on input line 50.
+(pdftex.def)             Requested size: 308.65236pt x 144.53963pt.
+<Resources/F7-a.png, id=32, 130.23656pt x 135.50626pt>
+File: Resources/F7-a.png Graphic file (type png)
+<use Resources/F7-a.png>
+Package pdftex.def Info: Resources/F7-a.png  used on input line 58.
+(pdftex.def)             Requested size: 193.47578pt x 201.30698pt.
+<Resources/F7-b.png, id=33, 126.4725pt x 134.75343pt>
+File: Resources/F7-b.png Graphic file (type png)
+<use Resources/F7-b.png>
+Package pdftex.def Info: Resources/F7-b.png  used on input line 64.
+(pdftex.def)             Requested size: 193.47578pt x 206.1474pt.
+<Resources/F8-a.png, id=34, 149.05687pt x 152.82094pt>
+File: Resources/F8-a.png Graphic file (type png)
+<use Resources/F8-a.png>
+Package pdftex.def Info: Resources/F8-a.png  used on input line 76.
+(pdftex.def)             Requested size: 193.47578pt x 198.37335pt.
+<Resources/F8-b.png, id=35, 150.5625pt x 154.32657pt>
+File: Resources/F8-b.png Graphic file (type png)
+<use Resources/F8-b.png>
+Package pdftex.def Info: Resources/F8-b.png  used on input line 82.
+(pdftex.def)             Requested size: 193.47578pt x 198.33089pt.
+<Resources/F9-a.png, id=36, 148.30406pt x 149.05687pt>
+File: Resources/F9-a.png Graphic file (type png)
+<use Resources/F9-a.png>
+Package pdftex.def Info: Resources/F9-a.png  used on input line 93.
+(pdftex.def)             Requested size: 193.47578pt x 194.46533pt.
+<Resources/F9-b.png, id=37, 160.34906pt x 152.82094pt>
+File: Resources/F9-b.png Graphic file (type png)
+<use Resources/F9-b.png>
+Package pdftex.def Info: Resources/F9-b.png  used on input line 99.
+(pdftex.def)             Requested size: 193.47578pt x 184.3962pt.
+) [6 <./Resources/Image with Gaussian noise filtered by low-pass Gaussian filter.png> <./Resources/F7-a.png> <./Resources/F7-b.png>] [7 <./Resources/F8-a.png> <./Resources/F8-b.png> <./Resources/F9-a.png> <./Resources/F9-b.png>] 
 AED: lastpage setting LastPage
-[2] (main.aux)
+(main.aux (Abstract.aux) (Main/adding_noise.aux) (Main/applying_filters.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15390 strings out of 475385
- 279437 string characters out of 2777378
- 1127499 words of memory out of 3000000
- 36539 multiletter control sequences out of 15000+600000
- 492374 words of font info for 56 fonts, out of 8000000 for 9000
+ 17063 strings out of 475385
+ 315500 string characters out of 2777378
+ 1167544 words of memory out of 3000000
+ 38167 multiletter control sequences out of 15000+600000
+ 494035 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,11n,77p,1190b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 62415 bytes).
+ 72i,11n,77p,1485b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (8 pages, 552784 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 68 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

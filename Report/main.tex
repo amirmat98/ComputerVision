@@ -6,6 +6,7 @@
 \usepackage{flushend,stfloats,amsthm,chngpage,times,,lipsum,lastpage} 
 \usepackage{calc,listings,color,wrapfig,tabularx,longtable,enumitem}
 \usepackage[style=numeric-comp,backend=biber]{biblatex}
+\usepackage{subcaption}
 \addbibresource{Refs.bib}
 \usepackage{lineno}
 \usepackage{matlab-prettifier}
@@ -38,7 +39,9 @@
 \tableofcontents
 
 \newpage
-\input{Main/Exercise1.tex}
+\include{Abstract.tex}
+\include{Main/adding_noise.tex}
+\include{Main/applying_filters.tex}
 
 
 
