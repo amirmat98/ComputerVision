@@ -7,7 +7,7 @@ Three distinct filters, namely the moving average filter, the low-pass Gaussian 
     \centering
     \includegraphics[width = \textwidth]{Resources/Avg_filter.png}
     \caption{Moving average filter with 7*7 pixels}
-    \label{fig:ApplyingFilters}
+    \label{fig:Moving Average Filter}
 \end{figure}
 
 Following the application of these two moving average filters to the image that contains Gaussian noise, it is possible to observe, on the basis of the plots presented in Figure 3, that the 3*3 pixels filter eliminates a portion of the noise associated with the image. It should be noted, however, that the image still contains a significant amount of noise. There is a significant reduction in the amount of noise in the picture when the size of the filter is increased to 7 by 7. Unfortunately, some of the picture's features are lost, and the picture itself gets hazy, which is not something that is desirable for some tasks. In this section, a function is built to plot the figures in order to reduce the amount of code that is currently being composed. In order to draw the plot of the image and its histogram, this function obtains the name of the image, the name of the noise, the name of the filter, and the size of the filter. 
@@ -15,27 +15,27 @@ Salt and pepper noise is next applied to the image, and then the moving average 
 
 \begin{figure} [ht]
     \centering
-    \includegraphics[scale = 1, angle=0]{Resources/Image with Gaussian noise filter by a moving average filter.png}
+    \includegraphics[width = \textwidth]{Resources/Image with Gaussian noise filter by a moving average filter.png}
     \caption{Image with Gaussian noise filter by a moving average filter with 7*7 pixels}
-    \label{fig:ApplyingFilters}
+    \label{fig:Image with Gaussian noise filter by a moving average filter}
 \end{figure}
 
 \newpage
 
 \begin{figure} [ht]
     \centering
-    \includegraphics[scale = 1, angle=0]{Resources/Image with Salt & Pepper noise filter by moving average filter.png}
+    \includegraphics[width = \textwidth]{Resources/Image with Salt & Pepper noise filter by moving average filter.png}
     \caption{Image with Salt \& Pepper noise filter by moving average filter with 7*7 pixels}
-    \label{fig:ApplyingFilters}
+    \label{fig:Image with salt and pepper noise filter by a moving average filter}
 \end{figure}
 
 As a result of the fact that low-pass Gaussian filters give greater weight to the central pixel as opposed to giving the same weight to all of the neighborhood pixels, it is anticipated that these filters will demonstrate a higher level of accuracy in contrast to moving average filters. The creation of low-pass Gaussian filters with 3*3 and 7*7 pixels is demonstrated in Figure 5, with the 7*7 filter being the one that is most visible.
 
 \begin{figure} [ht]
     \centering
-    \includegraphics[scale = 1, angle=0]{Resources/Low pass Gaussian filter.png}
+    \includegraphics[width = \textwidth]{Resources/Low pass Gaussian filter.png}
     \caption{Low pass Gaussian filter with 7*7 pixel size}
-    \label{fig:ApplyingFilters}
+    \label{fig:Low pass Gaussian filter}
 \end{figure}
 
 The use of both 3*3 and 7*7 low pass Gaussian filters on the image that contains Gaussian noise reveals, as shown in Figure 6, that this filter has been successful in reducing the noise to a level that is acceptable. When compared to the moving average filter of the same size, the 7*7 filter is able to totally eliminate the majority of the noise, and despite the fact that the picture becomes slightly blurry, it is still able to display the correct features of the image.
@@ -47,9 +47,9 @@ After everything is said and done, two median filters with pixel widths of 3*3 a
 
 \begin{figure} [ht]
     \centering
-    \includegraphics[scale = 1, angle=0]{Resources/Image with Gaussian noise filtered by low-pass Gaussian filter.png}
+    \includegraphics[width = \textwidth]{Resources/Image with Gaussian noise filtered by low-pass Gaussian filter.png}
     \caption{Image with Gaussian noise filtered by low-pass Gaussian filter with 7*7 pixels}
-    \label{fig:ApplyingFilters}
+    \label{fig:Gaussian noise filtered by low-pass Gaussian filter}
 \end{figure}
 
 \begin{figure} [ht]
@@ -66,7 +66,7 @@ After everything is said and done, two median filters with pixel widths of 3*3 a
         \label{fig:Second}
     \end{subfigure}
     \caption{Image with Salt \& Pepper noise filtered by low-pass Gaussian filter with (a) 3*3, and (b) 7*7 pixels}
-    \label{fig:ApplyingFilters}
+    \label{fig:salt and pepper noise filtered by low-pass Gaussian filter}
 \end{figure}
 
 
@@ -84,7 +84,7 @@ After everything is said and done, two median filters with pixel widths of 3*3 a
         \label{fig:Second}
     \end{subfigure}
     \caption{Image with Gaussian noise filtered by Median filter with (a) 3*3, and (b) 7*7 pixels}
-    \label{fig:ApplyingFilters}
+    \label{fig:Gaussian noise filtered by Median filter}
 \end{figure}
 
 \begin{figure}
@@ -101,5 +101,5 @@ After everything is said and done, two median filters with pixel widths of 3*3 a
         \label{fig:Second}
     \end{subfigure}
     \caption{Image with Salt \& pepper noise filtered by Median filter with (a) 3*3, and (b) 7*7 pixels}
-    \label{fig:ApplyingFilters}
+    \label{fig:Salt and pepper noise filtered by median filter}
 \end{figure}

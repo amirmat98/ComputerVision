@@ -88,6 +88,7 @@ Image1_GNoise_AF7 = conv2(Image1_GNoise , AFilter7 , "same") ;
 Drawing(Image1_GNoise_AF3 , "Gaussian" , "Moving Average" , 3)
 Drawing(Image1_GNoise_AF7 , "Gaussian" , "Moving Average" , 7)
 
+
 % moving average filter on Image1 Salt & Pepper Noise
 
 Image1_SaltPNoise_AF3 = conv2(Image1_SaltPNoise , AFilter3 , "same") ; 
@@ -111,6 +112,7 @@ Image2_SaltPNoise_AF7 = conv2(Image2_SaltPNoise , AFilter7 , "same") ;
 
 Drawing(Image2_SaltPNoise_AF3 , "Salt Pepper" , "Moving Average" , 3)
 Drawing(Image2_SaltPNoise_AF7 , "Salt Pepper" , "Moving Average" , 7)
+
 
 %% Define Low Pass Guassian Filters and apply them 
 
@@ -301,3 +303,4 @@ Phi4=angle(fft2(SharpFilter));
 
 figure,imagesc(SharpFilter), colormap gray, axis ('square')
 figure,imagesc(log(fftshift(Mag4))), colormap gray,xlabel('wx'),ylabel('wy'),axis ('square'), title("Magnitude log of the Sharpening filter")
+
