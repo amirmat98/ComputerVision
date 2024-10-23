@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.22)  23 OCT 2024 23:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.22)  23 OCT 2024 23:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -854,11 +854,11 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 \openout2 = `Main/adding_noise.aux'.
 
  (Main/adding_noise.tex
-<Resources/Images_Org_Nosied.png, id=17, 257.46187pt x 325.215pt>
+<Resources/Images_Org_Nosied.png, id=17, 575.90157pt x 587.94656pt>
 File: Resources/Images_Org_Nosied.png Graphic file (type png)
 <use Resources/Images_Org_Nosied.png>
 Package pdftex.def Info: Resources/Images_Org_Nosied.png  used on input line 22.
-(pdftex.def)             Requested size: 386.19183pt x 487.8213pt.
+(pdftex.def)             Requested size: 483.69687pt x 493.82689pt.
 ) [3
 
 
@@ -867,12 +867,12 @@ Package pdftex.def Info: Resources/Images_Org_Nosied.png  used on input line 22.
 \openout2 = `Main/applying_filters.aux'.
 
  (Main/applying_filters.tex
-<Resources/Avg_filter.png, id=21, 283.81032pt x 122.70844pt>
+<Resources/Avg_filter.png, id=23, 825.0825pt x 415.5525pt>
 File: Resources/Avg_filter.png Graphic file (type png)
 <use Resources/Avg_filter.png>
 Package pdftex.def Info: Resources/Avg_filter.png  used on input line 8.
-(pdftex.def)             Requested size: 425.71442pt x 184.0622pt.
-<Resources/Image with Gaussian noise filter by a moving average filter.png, id=22, 319.1925pt x 143.78719pt>
+(pdftex.def)             Requested size: 483.69687pt x 243.614pt.
+<Resources/Image with Gaussian noise filter by a moving average filter.png, id=24, 319.1925pt x 143.78719pt>
 File: Resources/Image with Gaussian noise filter by a moving average filter.png Graphic file (type png)
 <use Resources/Image with Gaussian noise filter by a moving average filter.png>
 Package pdftex.def Info: Resources/Image with Gaussian noise filter by a moving average filter.png  used on input line 18.
@@ -882,48 +882,48 @@ Package pdftex.def Info: Resources/Image with Gaussian noise filter by a moving 
 
 
  <./Resources/Avg_filter.png> <./Resources/Image with Gaussian noise filter by a moving average filter.png>]
-<Resources/Image with Salt & Pepper noise filter by moving average filter.png, id=26, 311.66437pt x 129.48375pt>
+<Resources/Image with Salt & Pepper noise filter by moving average filter.png, id=29, 311.66437pt x 129.48375pt>
 File: Resources/Image with Salt & Pepper noise filter by moving average filter.png Graphic file (type png)
 <use Resources/Image with Salt & Pepper noise filter by moving average filter.png>
 Package pdftex.def Info: Resources/Image with Salt & Pepper noise filter by moving average filter.png  used on input line 27.
 (pdftex.def)             Requested size: 311.6636pt x 129.48341pt.
-<Resources/Low pass Gaussian filter.png, id=27, 341.02406pt x 143.03438pt>
+<Resources/Low pass Gaussian filter.png, id=30, 341.02406pt x 143.03438pt>
 File: Resources/Low pass Gaussian filter.png Graphic file (type png)
 <use Resources/Low pass Gaussian filter.png>
 Package pdftex.def Info: Resources/Low pass Gaussian filter.png  used on input line 36.
 (pdftex.def)             Requested size: 341.02322pt x 143.03401pt.
  [5 <./Resources/Image with Salt & Pepper noise filter by moving average filter.png> <./Resources/Low pass Gaussian filter.png>]
-<Resources/Image with Gaussian noise filtered by low-pass Gaussian filter.png, id=31, 308.65312pt x 144.54pt>
+<Resources/Image with Gaussian noise filtered by low-pass Gaussian filter.png, id=34, 308.65312pt x 144.54pt>
 File: Resources/Image with Gaussian noise filtered by low-pass Gaussian filter.png Graphic file (type png)
 <use Resources/Image with Gaussian noise filtered by low-pass Gaussian filter.png>
 Package pdftex.def Info: Resources/Image with Gaussian noise filtered by low-pass Gaussian filter.png  used on input line 50.
 (pdftex.def)             Requested size: 308.65236pt x 144.53963pt.
-<Resources/F7-a.png, id=32, 130.23656pt x 135.50626pt>
+<Resources/F7-a.png, id=35, 130.23656pt x 135.50626pt>
 File: Resources/F7-a.png Graphic file (type png)
 <use Resources/F7-a.png>
 Package pdftex.def Info: Resources/F7-a.png  used on input line 58.
 (pdftex.def)             Requested size: 193.47578pt x 201.30698pt.
-<Resources/F7-b.png, id=33, 126.4725pt x 134.75343pt>
+<Resources/F7-b.png, id=36, 126.4725pt x 134.75343pt>
 File: Resources/F7-b.png Graphic file (type png)
 <use Resources/F7-b.png>
 Package pdftex.def Info: Resources/F7-b.png  used on input line 64.
 (pdftex.def)             Requested size: 193.47578pt x 206.1474pt.
-<Resources/F8-a.png, id=34, 149.05687pt x 152.82094pt>
+<Resources/F8-a.png, id=37, 149.05687pt x 152.82094pt>
 File: Resources/F8-a.png Graphic file (type png)
 <use Resources/F8-a.png>
 Package pdftex.def Info: Resources/F8-a.png  used on input line 76.
 (pdftex.def)             Requested size: 193.47578pt x 198.37335pt.
-<Resources/F8-b.png, id=35, 150.5625pt x 154.32657pt>
+<Resources/F8-b.png, id=38, 150.5625pt x 154.32657pt>
 File: Resources/F8-b.png Graphic file (type png)
 <use Resources/F8-b.png>
 Package pdftex.def Info: Resources/F8-b.png  used on input line 82.
 (pdftex.def)             Requested size: 193.47578pt x 198.33089pt.
-<Resources/F9-a.png, id=36, 148.30406pt x 149.05687pt>
+<Resources/F9-a.png, id=39, 148.30406pt x 149.05687pt>
 File: Resources/F9-a.png Graphic file (type png)
 <use Resources/F9-a.png>
 Package pdftex.def Info: Resources/F9-a.png  used on input line 93.
 (pdftex.def)             Requested size: 193.47578pt x 194.46533pt.
-<Resources/F9-b.png, id=37, 160.34906pt x 152.82094pt>
+<Resources/F9-b.png, id=40, 160.34906pt x 152.82094pt>
 File: Resources/F9-b.png Graphic file (type png)
 <use Resources/F9-b.png>
 Package pdftex.def Info: Resources/F9-b.png  used on input line 99.
@@ -936,22 +936,22 @@ Package pdftex.def Info: Resources/F9-b.png  used on input line 99.
 
 
 ]
-<Resources/F10-a.png, id=48, 125.71968pt x 110.66344pt>
+<Resources/F10-a.png, id=51, 125.71968pt x 110.66344pt>
 File: Resources/F10-a.png Graphic file (type png)
 <use Resources/F10-a.png>
 Package pdftex.def Info: Resources/F10-a.png  used on input line 10.
 (pdftex.def)             Requested size: 193.47578pt x 170.30568pt.
-<Resources/F10-b.png, id=49, 119.69719pt x 114.4275pt>
+<Resources/F10-b.png, id=52, 119.69719pt x 114.4275pt>
 File: Resources/F10-b.png Graphic file (type png)
 <use Resources/F10-b.png>
 Package pdftex.def Info: Resources/F10-b.png  used on input line 16.
 (pdftex.def)             Requested size: 193.47578pt x 184.97168pt.
-<Resources/F10-c.png, id=50, 126.4725pt x 114.4275pt>
+<Resources/F10-c.png, id=53, 126.4725pt x 114.4275pt>
 File: Resources/F10-c.png Graphic file (type png)
 <use Resources/F10-c.png>
 Package pdftex.def Info: Resources/F10-c.png  used on input line 22.
 (pdftex.def)             Requested size: 193.47578pt x 175.05254pt.
-<Resources/F10-d.png, id=51, 127.97812pt x 118.19156pt>
+<Resources/F10-d.png, id=54, 127.97812pt x 118.19156pt>
 File: Resources/F10-d.png Graphic file (type png)
 <use Resources/F10-d.png>
 Package pdftex.def Info: Resources/F10-d.png  used on input line 28.
@@ -960,12 +960,12 @@ Package pdftex.def Info: Resources/F10-d.png  used on input line 28.
 \openout2 = `Main/fourier_transform.aux'.
 
  (Main/fourier_transform.tex
-<Resources/F11-a.png, id=55, 116.68594pt x 111.41624pt>
+<Resources/F11-a.png, id=58, 116.68594pt x 111.41624pt>
 File: Resources/F11-a.png Graphic file (type png)
 <use Resources/F11-a.png>
 Package pdftex.def Info: Resources/F11-a.png  used on input line 8.
 (pdftex.def)             Requested size: 193.47578pt x 184.7588pt.
-<Resources/F11-b.png, id=56, 114.4275pt x 113.67468pt>
+<Resources/F11-b.png, id=59, 114.4275pt x 113.67468pt>
 File: Resources/F11-b.png Graphic file (type png)
 <use Resources/F11-b.png>
 Package pdftex.def Info: Resources/F11-b.png  used on input line 14.
@@ -1000,9 +1000,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  72i,11n,77p,1683b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (12 pages, 685003 bytes).
+Output written on main.pdf (12 pages, 892890 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
