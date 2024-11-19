@@ -17,28 +17,28 @@ Regarding the initial section, the patch is chosen in such a manner that it enco
 
 \begin{figure} [ht]
     \centering
-    \includegraphics[width = \textwidth]{Resources/Images_Org_Nosied.png}
+    \includegraphics[width = 0.5\textwidth]{Resources/F1.png}
     \caption{The patch to detect the Red car}
     \label{fig:The patch to detect the Red car}
 \end{figure}
 
 \begin{figure} [ht]
     \centering
-    \includegraphics[width = \textwidth]{Resources/Images_Org_Nosied.png}
+    \includegraphics[width = 0.9\textwidth]{Resources/F2.png}
     \caption{6 pictures in which the Red car has been detected}
     \label{fig:6 pictures in which the Red car has been detected}
 \end{figure}
 
-\begin{figure} [ht]
+\begin{figure} [!]
     \centering
-    \includegraphics[width = \textwidth]{Resources/Images_Org_Nosied.png}
+    \includegraphics[width = 0.5\textwidth]{Resources/F3.png}
     \caption{The patch to detect the Black car}
     \label{fig:The patch to detect the Black car}
 \end{figure}
 
-\begin{figure} [ht]
+\begin{figure} [h]
     \centering
-    \includegraphics[width = \textwidth]{Resources/Images_Org_Nosied.png}
+    \includegraphics[width = 0.9\textwidth]{Resources/F4.png}
     \caption{6 pictures in which the Black car has been detected in each.}
     \label{fig:6 pictures in which the Black car has been detected in each.}
 \end{figure}
@@ -46,10 +46,9 @@ Regarding the initial section, the patch is chosen in such a manner that it enco
 When utilizing this strategy, it is evident that both red and black automobiles are identified with a high degree of precision being achieved. As a result of a small portion of the automobile's front not being positioned within the rectangle, there is only a slight imperfection in the detection of the black car in the most recent snapshot of the image.
 "Color based segmentation" is an additional technique that can be utilized to identify an object in a photograph. This technique is based on the colors of the object being analysed. First, it is required to select the region that encompasses the color spectrum of the object that is to be detected. This is the technique that requires you to follow. The "Hue" values from the HSV color space representation, along with the calculation of the mean and the standard deviation of the "H" parameter, make it feasible to have a mask that defines a range in order to literally compare the colors and identify the objects when they are present. Both the red and black autos will require the same procedure to be repeated. Both in terms of computing efficiency and ease of implementation, the color-based segmentation method is a good choice. This can be helpful in situations where the items of interest have colors that are both distinct and consistent. The fact that this approach is mostly reliant on the color of objects, however, means that it may be sensitive to changes in lighting conditions, shadows, and differences in the look of items. It is also possible that it will struggle when the background and the objects in the scene have similar colors. The objects that were identified using this method are depicted in Figures 5 and 4, respectively. The template-based strategy is clearly superior to the color-based method in terms of accuracy for this application. This is a fact that cannot be denied. Because the color of the red car is distinct in comparison to the surrounding environment, color-based segmentation has been successful in identifying the vehicle with the required level of precision. It is only able to detect the red portion of the car, and it is unable to detect the entire area surrounding the vehicle, including the tires and the mirrors. The tires and other components of the vehicle have color space properties that are distinct from those of the body of the vehicle, which is the reason given for this phenomenon.
 
-
 \begin{figure} [ht]
     \centering
-    \includegraphics[width = \textwidth]{Resources/Images_Org_Nosied.png}
+    \includegraphics[width = 0.9\textwidth]{Resources/F5.png}
     \caption{6 pictures in which the Red car has been detected in each with color-based detection.}
     \label{fig:6 pictures in which the Red car has been detected in each with color-based detection.}
 \end{figure}
@@ -59,23 +58,24 @@ When the color-based segmentation and template matching methods are used to the 
 
 \begin{figure} [ht]
     \centering
-    \includegraphics[width = \textwidth]{Resources/Images_Org_Nosied.png}
+    \includegraphics[width = 0.9\textwidth]{Resources/F6.png}
     \caption{6 pictures in which the Black car has been detected in each with color-based detection.}
     \label{fig:6 pictures in which the Black car has been detected in each with color-based detection.}
 \end{figure}
 
+\par
 When it comes to comparison, there are a number of different characteristics that may be taken into consideration during the process. A total of three windows are defined in such a way that the smallest one is a perfect fit for the automobile, the next one is somewhat larger, and the final one contains a significantly larger number of pixels that encompass both the automobile and the neighborhood that surrounds it. The findings indicate that the process will become more time-consuming as the frame of the patch continues to grow in size; however, the accuracy will be relatively enhanced as a result of this time investment. This may be owing to the fact that larger patches contain a greater number of pixels, and matching larger patches requires comparing a greater number of pixels, which results in an increase in the amount of time required for computing. It is also possible that they will demand additional memory for processing and storage. By increasing the size of the window, the estimation becomes more accurate and resilient to changes in the rotation and lighting of the object. This is because the window gives more information. However, it may reveal certain data that are not necessary and may display some sections of the image that are not necessary as the item that has been spotted. As a result, it can appear to be more advantageous to use the highest score point as a criterion for comparing accuracy. As a consequence of this, it is possible to comprehend that the greatest score point will be more accurate when the frame is a perfect fit for the object, in contrast to when larger frames are utilized; nonetheless, as the position of the car shifts, certain components of the automobile are not positioned within the detected region. To get a successful match, it is essential to strike a balance between the size of the patch and the qualities of the objects or features that we are attempting to replicate. Because of this, we will be able to arrive at a more accurate figure within the allotted amount of time. The following images provide an accurate illustration of the effect that increasing the patch size has (Figure 4 depicts the frame that is a perfect match for the automobile).
 
 \begin{figure} [ht]
     \centering
-    \includegraphics[width = \textwidth]{Resources/Images_Org_Nosied.png}
-    \caption{The results of detecting objects with larger frames.}
-    \label{fig:The results of detecting objects with larger frames.}
+    \includegraphics[width = 0.9\textwidth]{Resources/F7-1.jpg}
+    \caption{The first results of detecting objects with larger frames}
+    \label{fig:The first results of detecting objects with larger frames}
 \end{figure}
 
 \begin{figure} [ht]
     \centering
-    \includegraphics[width = \textwidth]{Resources/Images_Org_Nosied.png}
-    \caption{The results of detecting objects with larger frames.}
-    \label{fig:The results of detecting objects with larger frames.}
+    \includegraphics[width = 0.9\textwidth]{Resources/F8-1.jpg}
+    \caption{The Second results of detecting objects with larger frames}
+    \label{fig:The Second results of detecting objects with larger frames}
 \end{figure}

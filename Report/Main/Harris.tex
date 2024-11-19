@@ -21,16 +21,26 @@ R = \det(M) - \alpha \cdot \operatorname{trace}^2(M)
 Additionally, the parameter $\alpha$ is a constant that is used to alter the sensitivity of the detector, which typically falls between the range of 0.04 to 0.06. When it comes to this particular exercise, the value that is deemed to be between these two numbers is 0.05. When analyzing the image, the corners are determined by the scores that are more than 0.3 of the maximum value of the R matrix. By adjusting this value, we are able to determine the total number of points that can be classified as the corner. The partial derivatives of the image are depicted in Figure 9, and the Gaussian filter is depicted in Figure 10.\\
 
 
-\begin{figure} [ht]
+\begin{figure}[h]
     \centering
-    \includegraphics[width = \textwidth]{Resources/Images_Org_Nosied.png}
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Resources/F9-1.PNG}
+        \caption{}
+        \label{fig:IX}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Resources/F9-2.png}
+        \caption{}
+        \label{fig:IY}
+    \end{subfigure}
     \caption{The partial derivatives of the image}
     \label{fig:The partial derivatives of the image}
 \end{figure}
 
 \begin{figure} [ht]
     \centering
-    \includegraphics[width = \textwidth]{Resources/Images_Org_Nosied.png}
+    \includegraphics[width = 0.4\textwidth]{Resources/F10.png}
     \caption{The Gaussian filer}
     \label{fig:The Gaussian filer}
 \end{figure}
@@ -38,7 +48,7 @@ Additionally, the parameter $\alpha$ is a constant that is used to alter the sen
 
 \begin{figure} [ht]
     \centering
-    \includegraphics[width = \textwidth]{Resources/Images_Org_Nosied.png}
+    \includegraphics[width = \textwidth]{Resources/F11.png}
     \caption{The detected corners}
     \label{fig:The detected corners}
 \end{figure}

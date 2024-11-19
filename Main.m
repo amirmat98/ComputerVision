@@ -1,6 +1,6 @@
-clc
-clear all
-close all
+clc;
+clear all;
+close all;
 
 %% Template Maching 
 
@@ -13,4 +13,4 @@ close all
 
 %% Corner Detection 
 
-% Harris_Corner()
+Harris_Corner()
