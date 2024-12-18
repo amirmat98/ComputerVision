@@ -1,14 +1,17 @@
 clc; clear; close all;
 
-%%
+%% Imports
 
 % [img1, img2, Points1, Points2] = import_files("Mire");
 [img1, img2, Points1, Points2] = import_files("Rubik");
 
+%% changin the size
 % if the images are too large you might want to resize them to a smaller
 % size
 img1 = imresize(img1, 0.8);
 img2 = imresize(img2, 0.8);
+
+%% Run the image matching algorithm
 
 list_ncc = findMatches(img1, img2, 'NCC');
 list_sift = findMatches(img1, img2, 'SIFT');
@@ -19,7 +22,7 @@ show_matches(img1, img2, list_ncc, 0, 10);
 figure(11) 
 show_matches(img1, img2, list_sift, 1, 11);
 
-% Changing the correspondences into homogeneous form 
+%% Changing the correspondences into homogeneous form 
 
 list_sift_img1_Hom = [list_sift(:,1:2) , ones(size(list_sift,1) , 1)].' ; 
 list_sift_img2_Hom = [list_sift(:,3:4) , ones(size(list_sift,1) , 1)].' ; 
@@ -28,7 +31,7 @@ list_ncc_img1_Hom = [list_ncc(:,1:2) , ones(size(list_ncc,1) , 1)].' ;
 list_ncc_img2_Hom = [list_ncc(:,3:4) , ones(size(list_ncc,1) , 1)].' ; 
 
 
-% performing ransac on F for matches found by NCC
+%% performing ransac on F for matches found by NCC
 
 % th = 0.04;
 % [bestF, consensus, outliers] = ransacF(list_ncc_img1_Hom, list_ncc_img2_Hom, th) ; 
