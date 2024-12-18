@@ -1,57 +1,39 @@
-\section{Harris corner detection}\label{P2}
+\section{Part II}\label{P2}
 
-TThe Harris Corner Detector is a well-known algorithm that is utilized for the purpose of locating corners or spots of interest within an image. The primary objective of the Harris Corner Detector is to identify substantial variations in intensity that occur in a variety of directions within a local neighborhood of a picture. There are points in the image when the intensity of the image suddenly changes in many directions, and these are known as corners. A structure tensor, which is a matrix that summarizes the local picture structure based on the image derivatives, might be constructed for each pixel in the image. This would allow us to construct a structure tensor. This is the formula for the structural tensor:
+In contrast to the first portion, this section does not come with the correspondences already provided. By utilizing the \texttt{findMatches} function, the objective is to locate the points that relate to each other first. Because this function could find a great number of points, a significant number of them could be incorrect or noisy. Consequently, the inliers, or the matches that are correct, ought to be communicated. The subsequent phase is analogous to the first step, which is to compute the "A" matrix and the fundamental matrix $F$, and then to locate epipolar lines together with the points that correspond to them after they have been normalized.
 
+Getting back to the problem of identifying matching points, there are a few different approaches to obtain them, such as the Normalized Cross-Correlation (NCC) and the Scale-Invariant Feature Transform (SIFT). While SIFT will locate a large number of comparable points, it is important to note that not all of these points are inliers. For the purpose of filtering the correspondences, putting the outliers aside, and calculating the optimal fundamental matrix, the RANSAC (RANdom SAmpling Consensus) approach is utilized. This method chooses a few pairs of corresponding points at random from the points that were discovered by the \texttt{findMatches} function. These pairs are then used in the \texttt{EightPointsAlgorithmN(P1, P2)} function, which locates the fundamental matrix $F$, computes the $X^TFX$, which can be considered as the error (we considered the absolute value of $X^TFX$ for testing the fundamental matrix), and establishes a threshold. In this procedure, the outliers are identified, the inliers are retained, and the process is repeated for a significant number of repetitions. A change is also made to the total number of iterations. Whenever a superior fundamental matrix $F$ is discovered, the one that was previously used will be substituted for it. 
 
-\[
-M = \sum_{x, y} W(x, y)
-\begin{bmatrix}
-I_x I_x & I_x I_y \\
-I_x I_y & I_y I_y
-\end{bmatrix}
-\]
+Now, there ought to be proper inlier pair points that appear to be accurate, and the error ought to be very close to zero; hence, the threshold ought to be getting smaller. In the end, one accurate $F$ would be discovered, along with the points that corresponded to it the best. When it was first implemented, the \texttt{findMatch} algorithm was utilized in conjunction with two distinct NCC and SIFT approaches. During the simulation of the code, it appeared that the NCC algorithm was unable to locate any matches in the two photos by employing the delta and sigma values of 5 and 10, respectively. Changing the values of these two factors and attempting to discover the appropriate value while taking into consideration the photographs is one approach that may be taken to try to solve this problem. In an effort to reduce the quantity of sigma, which represents the contribution of the Euclidian distance, and delta, which represents the size of the patch for the NCC technique, we made multiple attempts. This is Figure 5, which displays the findings for the scenario in which sigma and delta are equal to 5 and 4, respectively. In spite of the fact that the algorithm has been successful in locating matches using this method, it is immediately apparent that the matches are not accurate in any way, and flaws can be observed just by looking at the photographs. 
 
-Utilizing the determinant and trace of the structure tensor, the following steps can be taken to compute a corner response function:
+When it came to the SIFT approach, I had the same issue. This method uses a value for the comparison of the vectors that is equal to 0.4 for this particular example. This value is referred to as the sigma. In addition, the outcomes of this particular example are displayed in Figure 6. For the second time, it is clear that this method does not display correct matches in the same way that the NCC method does. At first glance, the results of NCC appeared to be more plausible than those of SIFT because the error was lower. There were other checks made on other values for the parameters that were given. It was not possible to find appropriate matches in any of the circumstances.
 
-
-\[
-R = \det(M) - \alpha \cdot \operatorname{trace}^2(M)
-\]
-
-Additionally, the parameter $\alpha$ is a constant that is used to alter the sensitivity of the detector, which typically falls between the range of 0.04 to 0.06. When it comes to this particular exercise, the value that is deemed to be between these two numbers is 0.05. When analyzing the image, the corners are determined by the scores that are more than 0.3 of the maximum value of the R matrix. By adjusting this value, we are able to determine the total number of points that can be classified as the corner. The partial derivatives of the image are depicted in Figure 9, and the Gaussian filter is depicted in Figure 10.\\
-
-
-\begin{figure}[h]
+\begin{figure} [h]
     \centering
-    \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=\textwidth]{Resources/F9-1.PNG}
-        \caption{}
-        \label{fig:IX}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=\textwidth]{Resources/F9-2.png}
-        \caption{}
-        \label{fig:IY}
-    \end{subfigure}
-    \caption{The partial derivatives of the image}
-    \label{fig:The partial derivatives of the image}
+    \includegraphics[width = \textwidth]{Resources/F5.jpg}
+    \caption{Rubik correspondence points finding algorithm using NCC}
+    \label{fig:Rubik correspondence points finding algorithm using NCC}
 \end{figure}
 
 \begin{figure} [ht]
     \centering
-    \includegraphics[width = 0.4\textwidth]{Resources/F10.png}
-    \caption{The Gaussian filer}
-    \label{fig:The Gaussian filer}
+    \includegraphics[width = \textwidth]{Resources/F6.jpg}
+    \caption{Rubik correspondence points finding algorithm using Sift}
+    \label{fig:Rubik correspondence points finding algorithm using Sift}
 \end{figure}
 
+
+The \texttt{Ransac} function was finished before moving on to the following step. The \texttt{ransac} function received the matches that were discovered in the previous section as inputs. These matches were delivered to the function. There is also a threshold that is defined here, and it is equal to 0.1 for the image that is being represented. Because the \texttt{Ransac} function had access to a greater number of correspondence points and the ability to select a variety of random points, it was given the SIFT method's correspondence points. The absolute value of the expression $X^TFX$ would be considered the test function or the error, according to the definition.
+
+Figure 7 demonstrates that the fundamental matrix that has been optimized is not accurate since the epipolar lines are not shown in the correct manner. The reason for this is primarily due to the fact that the \texttt{Ransac} function is an optimization method, and if the inputs are incorrect, then the optimization and the optimal fundamental matrices will also be incorrect. In order to function properly, RANSAC is predicated on the premise that the majority of the data points are inliers and that the model should be able to adequately fit these inliers. If a substantial number of incorrect matches are provided, the algorithm may attempt to fit the model to these outliers rather than the actual underlying model, which will result in the generation of an incorrect model because of this. Due to the presence of noise and complexity in the photographs, the majority of the matches that were discovered for this collection of pictures, which can also be seen in Figure 6, are incorrect. As a result of this issue, the \texttt{Ransac} function produces incorrect resulting values.
 
 \begin{figure} [ht]
     \centering
-    \includegraphics[width = \textwidth]{Resources/F11.png}
-    \caption{The detected corners}
-    \label{fig:The detected corners}
+    \includegraphics[width = \textwidth]{Resources/F7.jpg}
+    \caption{Rubik correspondence points finding algorithm using Sift}
+    \label{fig:Rubik correspondence points finding algorithm using Sift - 2}
 \end{figure}
 
+It is possible to see that the values of the epipolar constraint expression ($X^TFX$) for the output points of the \texttt{Ransac} function are actually very close to zero. This indicates that the \texttt{Ransac} function has been successful in locating an optimized fundamental matrix; however, there are some matches that are not recognized in the correct manner. In spite of the fact that the epipolar constraint is tested on both the left and right epipoles, the result is quite near to zero. In order to lessen the effect that incorrect matches have on RANSAC, it is essential to preprocess and filter the data with great care before applying the algorithm.
 
-There are three functions inside of the files that have been provided for the assignment. "Template Matching" is the name of the function that is responsible for fitting templates together. The function known as "ColorBased Segmentation" also performs a simulation of the color-based segmentation approach on the displayed images. The corner detection functionality is applied to the image by utilizing the Harris Corner() function. Every one of these routines is written in a separate file that is referred to as "main." You have the option of commenting out each function in the event that you do not require the results pertaining to that particular aspect of the problem.
+It is written in the \texttt{Main2} MATLAB script that the primary script for this portion is constructed. For the purpose of observing the results concerning the relevant set of photographs, all that is required is to change or remove the comment from the names of the input images. It should be brought to your attention that the \texttt{findMatches} function, which has a significant impact on the outputs, can be used with a variety of values, depending on the image being analyzed. For these arguments, there are also some values that have been tested and commented on within the \texttt{findMatches} method.

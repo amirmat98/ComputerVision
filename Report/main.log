@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.22)  17 DEC 2024 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.22)  18 DEC 2024 14:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -766,47 +766,54 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
  (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-<Resources/F8-1.jpg, id=9, 483.90576pt x 233.48769pt>
-File: Resources/F8-1.jpg Graphic file (type jpg)
-<use Resources/F8-1.jpg>
-Package pdftex.def Info: Resources/F8-1.jpg  used on input line 16.
-(pdftex.def)             Requested size: 435.32422pt x 210.05858pt.
 ) [1
 
- <./Resources/F8-1.jpg>]
+]
+<Resources/F1.jpg, id=19, 483.67471pt x 193.75108pt>
+File: Resources/F1.jpg Graphic file (type jpg)
+<use Resources/F1.jpg>
+Package pdftex.def Info: Resources/F1.jpg  used on input line 41.
+(pdftex.def)             Requested size: 483.69687pt x 193.76537pt.
+<Resources/F2.jpg, id=20, 483.67471pt x 193.75108pt>
+File: Resources/F2.jpg Graphic file (type jpg)
+<use Resources/F2.jpg>
+Package pdftex.def Info: Resources/F2.jpg  used on input line 48.
+(pdftex.def)             Requested size: 483.69687pt x 193.76537pt.
+<Resources/F3.jpg, id=21, 434.63077pt x 174.105pt>
+File: Resources/F3.jpg Graphic file (type jpg)
+<use Resources/F3.jpg>
+Package pdftex.def Info: Resources/F3.jpg  used on input line 79.
+(pdftex.def)             Requested size: 483.69687pt x 193.76093pt.
+<Resources/F4.jpg, id=22, 434.63077pt x 174.105pt>
+File: Resources/F4.jpg Graphic file (type jpg)
+<use Resources/F4.jpg>
+Package pdftex.def Info: Resources/F4.jpg  used on input line 86.
+(pdftex.def)             Requested size: 483.69687pt x 193.76093pt.
+) [2 <./Resources/F1.jpg> <./Resources/F2.jpg>] [3 <./Resources/F3.jpg> <./Resources/F4.jpg>]
 \openout2 = `Main/Part2.aux'.
 
  (Main/Part2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-<Resources/F9-1.PNG, id=19, 536.0025pt x 438.8897pt>
-File: Resources/F9-1.PNG Graphic file (type png)
-<use Resources/F9-1.PNG>
-Package pdftex.def Info: Resources/F9-1.PNG  used on input line 27.
-(pdftex.def)             Requested size: 193.47578pt x 158.42207pt.
-<Resources/F9-2.png, id=21, 522.45187pt x 426.84468pt>
-File: Resources/F9-2.png Graphic file (type png)
-<use Resources/F9-2.png>
-Package pdftex.def Info: Resources/F9-2.png  used on input line 33.
-(pdftex.def)             Requested size: 193.47578pt x 158.07335pt.
-<Resources/F10.png, id=22, 402.75468pt x 350.81062pt>
-File: Resources/F10.png Graphic file (type png)
-<use Resources/F10.png>
-Package pdftex.def Info: Resources/F10.png  used on input line 43.
-(pdftex.def)             Requested size: 193.47578pt x 168.521pt.
-<Resources/F11.png, id=23, 648.92438pt x 493.845pt>
-File: Resources/F11.png Graphic file (type png)
-<use Resources/F11.png>
-Package pdftex.def Info: Resources/F11.png  used on input line 51.
-(pdftex.def)             Requested size: 483.69687pt x 368.10712pt.
-) [2
+<Resources/F5.jpg, id=31, 434.85013pt x 176.52332pt>
+File: Resources/F5.jpg Graphic file (type jpg)
+<use Resources/F5.jpg>
+Package pdftex.def Info: Resources/F5.jpg  used on input line 13.
+(pdftex.def)             Requested size: 483.69687pt x 196.3526pt.
+<Resources/F6.jpg, id=32, 434.85013pt x 176.52332pt>
+File: Resources/F6.jpg Graphic file (type jpg)
+<use Resources/F6.jpg>
+Package pdftex.def Info: Resources/F6.jpg  used on input line 20.
+(pdftex.def)             Requested size: 483.69687pt x 196.3526pt.
+ [4
 
 
 
- <./Resources/F9-1.PNG> <./Resources/F9-2.png> <./Resources/F10.png>] [3 <./Resources/F11.png>] 
+ <./Resources/F5.jpg>]
+<Resources/F7.jpg, id=36, 434.85013pt x 176.52332pt>
+File: Resources/F7.jpg Graphic file (type jpg)
+<use Resources/F7.jpg>
+Package pdftex.def Info: Resources/F7.jpg  used on input line 32.
+(pdftex.def)             Requested size: 483.69687pt x 196.3526pt.
+ [5 <./Resources/F6.jpg> <./Resources/F7.jpg>]) [6] 
 AED: lastpage setting LastPage
 (main.aux (Main/Part1.aux) (Main/Part2.aux))
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -814,17 +821,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17053 strings out of 475385
- 312846 string characters out of 2777378
- 1164899 words of memory out of 3000000
- 38155 multiletter control sequences out of 15000+600000
- 497454 words of font info for 70 fonts, out of 8000000 for 9000
+ 17056 strings out of 475385
+ 313095 string characters out of 2777378
+ 1169889 words of memory out of 3000000
+ 38158 multiletter control sequences out of 15000+600000
+ 496947 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,11n,77p,1198b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 682836 bytes).
+ 72i,11n,77p,1501b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (7 pages, 1621646 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
