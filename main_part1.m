@@ -1,6 +1,4 @@
-clc
-clear all
-close all
+clc; clear all; close all
 
 % Importing both images and correspondences
 
@@ -10,7 +8,6 @@ close all
 
 P1 = [Points1.' ; ones(1 , size(Points1 , 1))]; 
 P2 = [Points2.' ; ones(1 , size(Points2 , 1))]; 
-
 
 
 % Showing the images and points on them 
