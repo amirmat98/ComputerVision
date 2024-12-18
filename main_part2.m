@@ -6,8 +6,7 @@ clc; clear; close all;
 [img1, img2, Points1, Points2] = import_files("Rubik");
 
 %% changin the size
-% if the images are too large you might want to resize them to a smaller
-% size
+% if the images are too large you might want to resize them to a smaller size
 img1 = imresize(img1, 0.8);
 img2 = imresize(img2, 0.8);
 
@@ -16,11 +15,8 @@ img2 = imresize(img2, 0.8);
 list_ncc = findMatches(img1, img2, 'NCC');
 list_sift = findMatches(img1, img2, 'SIFT');
 
-figure(10)
-show_matches(img1, img2, list_ncc, 0, 10);
-
-figure(11) 
-show_matches(img1, img2, list_sift, 1, 11);
+show_matches(img1, img2, list_ncc, 0, 1);
+show_matches(img1, img2, list_sift, 1, 2);
 
 %% Changing the correspondences into homogeneous form 
 
@@ -36,18 +32,15 @@ list_ncc_img2_Hom = [list_ncc(:,3:4) , ones(size(list_ncc,1) , 1)].' ;
 % th = 0.04;
 % [bestF, consensus, outliers] = ransacF(list_ncc_img1_Hom, list_ncc_img2_Hom, th) ; 
 
-% % performing ransac on F for matches found by SIFT
-% 
+%% performing ransac on F for matches found by SIFT
+
 th = 0.1;
 [bestF, consensus, outliers] = ransacF(list_sift_img1_Hom, list_sift_img2_Hom, th) ; 
 
 %% Visualization and validation 
 
-figure
 visualizeEpipolarLines(img1, img2, bestF, consensus(1:2 , :).', consensus(4:5 , :).') ; 
-
 Residuals = testF(bestF, consensus(1:3 , :), consensus(4:6 , :)) ; 
-% visualizeEpipolarLines(img1, img2, bestF, [], []) ; 
 
 %% Computing right and left null spaces
 

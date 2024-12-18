@@ -2,8 +2,8 @@ clc; clear; close all
 
 %% Importing both images and correspondences
 
-[img, img1, Points1, Points2] = import_files("Mire");
-%[img, img1, Points1, Points2] = import_files("Rubik");
+%[img, img1, Points1, Points2] = import_files("Mire");
+[img, img1, Points1, Points2] = import_files("Rubik");
 
 %% Homogeneous coordinates
 P1 = [Points1.' ; ones(1 , size(Points1 , 1))]; 
