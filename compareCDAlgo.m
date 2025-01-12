@@ -1,83 +1,74 @@
-function [] = compareCDAlgo(videoFile, tau1, alpha, tau2) 
-% This function compares the output of the change detection algorithm when
-% using two possible background models:
-% 1. A static model, e.g. a single frame or the average of N frames.
-% In this case, the background is computed once and for all
-% 2. A running average to update the model. In this case the background is
-% updated, if needed, at each time instant
-% You must visualize the original video, the background and binary map
-% obtained with 1., the background and binary map
-% obtained with 2.
-% tau1 is the threshold for the change detection
-% alpha is the parameter to weight the contribution of current image and
-% previous background in the running average
-% tau2 is the threshold for the image differencing in the running average
-% N is the quantity of frames utilized to calculate the static background
-
-% Create a VideoReader object
-videoReader = VideoReader(videoFile);
+function [] = compareCDAlgo(videoFile, tau1, alpha, tau2)
+    % This function compares the output of the change detection algorithm when
+    % using two possible background models:
+    % 1. A static model, e.g. a single frame or the average of N frames.
+    % In this case, the background is computed once and for all
+    % 2. A running average to update the model. In this case the background is
+    % updated, if needed, at each time instant
+    % You must visualize the original video, the background and binary map
+    % obtained with 1., the background and binary map
+    % obtained with 2.
+    % tau1 is the threshold for the change detection
+    % alpha is the parameter to weight the contribution of current image and
+    % previous background in the running average
+    % tau2 is the threshold for the image differencing in the running average
     
-% Initialize variables for static background computation
-staticBackground = 0; % Accumulator for averaging
-frameCount = 0;
-
-% Compute the static background (average of the first N frames)
-while hasFrame(videoReader) && frameCount < N
-    frame = readFrame(videoReader);
-    frameGray = rgb2gray(frame); % Convert to grayscale
-    staticBackground = staticBackground + double(frameGray); % Accumulate
-    frameCount = frameCount + 1;
-end
-% Compute average background
-staticBackground = uint8(staticBackground / frameCount);
-
-% Reset VideoReader to process video from the start
-videoReader.CurrentTime = 0;
-
-% Initialize running average background model
-runningAverage = double(staticBackground); % Start with static background
-prevFrameGray = zeros(size(staticBackground), 'double'); % Placeholder for previous frame
-
-% Loop through each frame of the video
-while hasFrame(videoReader)
-    % Read the next frame and convert to gray scale
-    frame = readFrame(videoReader);
-    frameGray = double(rgb2gray(frame)); % (as double for processing)
+    % Create a VideoReader object
+    videoReader = VideoReader(videoFile);
     
-    % Binary map for static background model
-    binaryMap1 = abs(frameGray - double(staticBackground)) > tau1;
+    % Initialize variables
+    firstFrame = true;
+    staticBackground = [];
+    runningBackground = [];
     
-    % Update running average (vectorized operation)
-    diffWithPrev = abs(prevFrameGray - frameGray);
-    updateMask = diffWithPrev < tau2;
-    runningAverage(updateMask) = (1 - alpha) * runningAverage(updateMask) + alpha * frameGray(updateMask);
+    % Loop through each frame of the video
+    while hasFrame(videoReader)
+        % Read the next frame
+        frame = readFrame(videoReader);
+        grayFrame = rgb2gray(frame); % Convert to grayscale
     
-    % Binary map for running average model
-    binaryMap2 = abs(frameGray - runningAverage) > tau1;
+        if firstFrame
+            % Set up the static background (average of first N frames or first frame)
+            staticBackground = double(grayFrame);
+            runningBackground = double(grayFrame);
+            firstFrame = false;
+            continue;
+        end
     
-    % Visualization
-    figure(1);
-    subplot(2, 3, 1), imshow(uint8(frameGray), 'Border', 'tight');
-    title(sprintf('Frame %d', round(videoReader.CurrentTime * videoReader.FrameRate)));
+        % Compute binary map for static background
+        diffStatic = abs(double(grayFrame) - staticBackground);
+        binaryMapStatic = diffStatic > tau1;
     
-    subplot(2, 3, 2), imshow(staticBackground, 'Border', 'tight');
-    title('Static Background');
+        % Update running average background
+        runningBackground = alpha * double(grayFrame) + (1 - alpha) * runningBackground;
     
-    subplot(2, 3, 3), imshow(binaryMap1, 'Border', 'tight');
-    title('Binary Map 1');
+        % Compute binary map for running background
+        diffRunning = abs(double(grayFrame) - runningBackground);
+        binaryMapRunning = diffRunning > tau2;
     
-    subplot(2, 3, 5), imshow(uint8(runningAverage), 'Border', 'tight');
-    title('Running Average');
+        % Display results
+        figure(1);
+        subplot(2, 3, 1), imshow(frame, 'Border', 'tight');
+        title(sprintf('Frame %d', round(videoReader.CurrentTime * videoReader.FrameRate)));
     
-    subplot(2, 3, 6), imshow(binaryMap2, 'Border', 'tight');
-    title('Binary Map 2');
+        subplot(2, 3, 2), imshow(uint8(staticBackground), 'Border', 'tight');
+        title('Static Background');
     
-    % Update previous frame
-    prevFrameGray = frameGray;
-end
-
-% Close all figures
-close all;
-
-fprintf('Finished displaying video: %s\n', videoFile);
-end
+        subplot(2, 3, 3), imshow(binaryMapStatic, 'Border', 'tight');
+        title('Binary Map 1');
+    
+        subplot(2, 3, 5), imshow(uint8(runningBackground), 'Border', 'tight');
+        title('Running Average');
+    
+        subplot(2, 3, 6), imshow(binaryMapRunning, 'Border', 'tight');
+        title('Binary Map 2');
+    
+        pause(0.01); % Pause to display the frames
+    end
+    
+    % Close all figures
+    %close all;
+    
+    fprintf('Finished processing video: %s\n', videoFile);
+    end
+    
