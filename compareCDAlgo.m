@@ -55,13 +55,13 @@ while hasFrame(videoReader)
     title('Static Background');
 
     subplot(2, 3, 3), imshow(binaryMapStatic, 'Border', 'tight');
-    title('Binary Map (Static)');
+    title('Binary Map 1');
 
     subplot(2, 3, 5), imshow(uint8(runningBackground), 'Border', 'tight');
     title('Running Average Background');
 
     subplot(2, 3, 6), imshow(binaryMapRunning, 'Border', 'tight');
-    title('Binary Map (Running Average)');
+    title('Binary Map 2');
 
     pause(0.01); % Pause to display the frames
 end
