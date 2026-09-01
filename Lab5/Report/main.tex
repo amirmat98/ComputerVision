@@ -1,0 +1,42 @@
+\documentclass{article}
+%% Useful packages
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{crop,graphicx,amsmath,array,color,amssymb,fancyhdr,lineno}
+\usepackage{flushend,stfloats,amsthm,chngpage,times,,lipsum,lastpage} 
+\usepackage{calc,listings,color,wrapfig,tabularx,longtable,enumitem}
+\usepackage[style=numeric-comp,backend=biber]{biblatex}
+\usepackage{subcaption}
+\addbibresource{Refs.bib}
+\usepackage{lineno}
+\usepackage{matlab-prettifier}
+%\usepackage[table,xcdraw]{xcolor}
+\usepackage{colortbl}
+\usepackage{amsmath} 
+%%%%%%%%%%%%   Header and Footer  %%%%%%%%%%%%%
+\pagestyle{fancy}
+\fancypagestyle{plain}{%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyhf{}%
+}
+
+\title{%
+  Lab 5 \\
+  \large NCC-based segmentation and Harris corner detection}
+\author{AmirMahdi Matin-s5884715}
+
+\begin{document}
+\input{Title/title.tex}
+
+\sffamily
+
+\fancyhf{}
+\fancyhead[L]{AmirMahdi Matin-s5884715}
+\fancyhead[R]{Lab 5}
+\fancyfoot[R]{ \bf\thepage\ \rm }%
+
+\newpage
+\include{Main/NCC.tex}
+\include{Main/Harris.tex}
+
+\end{document}
